@@ -1,0 +1,7 @@
+<div class="todoWrapper">
+	<button class="removeTodo" (click)="removeTodo()"></button>
+	<span (click)="toggleStatus()" 
+	      [ngClass]="!todo.isFinished ? 'todoWrapper' : 'finished'">
+	  {{todo.text}}
+	</span>
+</div>
